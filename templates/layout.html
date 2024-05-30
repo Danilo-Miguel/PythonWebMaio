@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilo.css')}}">
+    
 </head>
 <body>
     <div class = "conteudo_principal">
         <h1>Blog Aula Ocean</h1>
         <div class = "nav">
             {%if not session.logado%}
-             <a href>Login</a>
+             <a href="{{url_for('login')}}">Login</a>
              {%else%}
-             <a href>Logout</a>
+             <a href="{{url_for('logout')}}">Logout</a>
              {%endif%}
         </div>
+        {%for mensagem in get_flashed_mensages%}
+        <div class="flash"> {{mensagem}}</div>
+        {%endfor%}
+        {% block corpo%} {% endblock%}
     </div> 
-
-    </div>
 </body>
 </html>

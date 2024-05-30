@@ -1,0 +1,58 @@
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+h1, h2, a{
+    color: #377BA8;
+
+}
+
+h2{
+    font-size: 1.2em;
+
+}
+
+.conteudo_principal{
+    margin: 2em auto;
+    width: 55em;
+    border: 5px solid #ccc;
+    padding: 0.8em;
+    background-color: white
+}
+
+.nav{
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0.3em;
+    background-attachment: #fafafa;
+}
+
+.flash{
+background-attachment: #CEE5f5;
+padding: 0.5em;
+border: 1px solid #AACBE2;
+}
+
+.erro{
+    background-color: #F0D6D6;
+    padding: 0.5em;
+}
+
+.inserir_post{
+    font-weight: bold;
+}
+
+.posts{
+    list-style: none;
+    margin: 0;
+}
+
+.posts li{
+    margin: 0.8em 1.2em;
+}
+
+.posts li h2{
+    margin-left: -1em;
+}
+
